@@ -9,7 +9,9 @@ public class Store {
         
         register1.addItem(1.65);
         register1.addItem(2.05);
-       
+        register1.getCount();
+        register1.getTotal();
+        
         System.out.println("The total # of items purchased is: " + register1.getCount());
         System.out.printf("The total price is: $%.2f\n", register1.getTotal());
         
@@ -17,6 +19,16 @@ public class Store {
         
         System.out.println("The total # of items purchased is: " + register1.getCount());
         System.out.printf("The total price is: $%.2f\n", register1.getTotal());
+        
+        register1.addItem(1.65);
+        register1.addItem(2.05);
+        register1.getSalesTotal();
+        register1.getSalesCount();
+        
+        System.out.println("The total # of items purchased is: " + register1.getCount());
+        System.out.printf("The total price is: $%.2f\n", register1.getTotal());
+        
+        register1.resetSales();
     }
     
 }
